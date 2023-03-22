@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style2&3.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1 sidebar">
+        <ul class="list-group" id="sidebar-logo">
+          <a href="#" class="img-fluid"><img class="logo" src="image/logo.png"></a>
+          <a href="#" class="img-fluid"><img class="logo1" src="image/lg1.png"></a>
+          <a href="index4.html" class="img-fluid"><img class="logo2" src="image/lg2.png"></a>
+          <a href="index5.html" class="img-fluid"><img class="logo2" src="image/lg3.png"></a>
+          <a href="course.html" class="img-fluid"><img class="logo2" src="image/lg4.png"></a>
+          <a href="index8.html" class="img-fluid"><img class="logo2" src="image/lg5.png"></a>
+          <a href="index1.html" class="ima-fluid"><img class="logo3" src="image/lg6.png"></a>
+        </ul>
+      </div>
+
+      <div class=" text-dark col-8 ">
+        <div class="row" style="margin-left: 2%;">
+          <div>
+            <h1>Hello David !</h1>
+            <h5>Welcome Back</h5><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Attendence section start-->
+          <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <div class="card roundborder text-center ">
+              <div class="card-body">
+                <h4 class="card-title">Attendance</h4>
+                <h6 class=" card-subtitle">October</h6>
+                <div class=" row">
+                  <div class=" card-body col-sm-4">
+                    <h1>5</h1>
+                    <p class="row">WHF Applied</p>
+                  </div>
+                  <div class=" card-body col-sm-4">
+                    <h1>5</h1>
+                    <p class="row" style="margin-left: 14px;">Approved</p>
+                  </div>
+                  <div class=" card-body col-sm-4">
+                    <h1>0</h1>
+                    <p class="row" style="margin-left: 14px;">Rejected</p>
+                  </div>
+                </div>
+                <button class=" btn roundborder" id="leavebtn" data-toggle="modal" data-target="#Attendence" style=" border: none; background-color: plum;"> Apply for
+                  WHF</button>
+                <a href="index11.html"><button class="btn roundborder" style=" border: none ; margin-left: 3px;">Manage</button></a>
+              </div>
+            </div>
+          </div><br>
+          <!-- Attendence section end -->
+
+          <!-- Attendence time model section start -->
+          <div class="modal fade" id="Attendence" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content roundborder">
+                <div class="modal-body ">
+                  <form class="text-dark  text-center">
+                    <h3>Attendance</h3>
+                    <div class="form-row row">
+                      <div class="form-group">
+                        <label for="date"  style="margin-right: 150px;">Start time</label>
+                        <input type="time" class="form-control" style="width: 180px; margin-right: 50px;">
+                      </div>
+                      <div class="form-group ">
+                        <label for="date" class="" style="margin-right: 150px;">End time</label>
+                        <input type="time" class="form-control " style="width: 180px;">
+                      </div>
+                    </div>
+                </div>
+                <div class=" text-center">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="btn roundborder"
+                    style=" background-color: white; border: none;">Cancel</button>
+                  <button class=" btn roundborder" style=" border: none; background-color: plum;"> Apply</button>
+                </div>
+                <br>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Attendence time m0del section end -->
+
+          <!-- Working houre section start -->
+          <div class="col-sm-12 col-lg-6 col-md-6">
+            <div class="card roundborder text-center">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 7%;">Working Hours</h5>
+                <h3 class=" card-subtitle">10:30 am - 4:30 pm</h3>
+              </div>
+            </div><br>
+            <!-- Working houre section end -->
+
+            <!-- Exceptional section start -->
+
+            <div class="card roundborder text-center">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 7%;">Exceptional leave</h5>
+                <button class=" btn roundborder" style="  border: none; background-color: plum;">Apply</button>
+                <button class="btn roundborder" style=" background-color: white; border: none;">Manage</button>
+              </div>
+            </div>
+            <!-- Exceptional section end -->
+          </div>
+        </div><br>
+
+        <div class="row">
+          <!-- Leave section start -->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card roundborder text-center">
+              <div class="card-body">
+                <h4 class="card-title">Leaves</h4>
+                <h6 class=" card-subtitle">October</h6>
+                <div class=" row">
+                  <div class=" card-body col-sm-4">
+                    <h1>5</h1>
+                    <p class="row">Total Counts</p>
+                  </div>
+                  <div class=" card-body col-sm-4">
+                    <h1>5</h1>
+                    <p class="row" style="margin-left: 14px;">Leave Taken</p>
+                  </div>
+                  <div class=" card-body col-sm-4">
+                    <h1>0</h1>
+                    <p class="row" style="margin-left: 14px;">Balance</p>
+                  </div>
+                </div>
+                <button class=" btn roundborder" id="leavebtn" data-toggle="modal" data-target="#leaveapplay"
+                  style=" border: none; background-color: plum;"> Apply</button>
+                <a href="index8.html"><button class="btn roundborder" style=" border: none ; margin-left: 3px;">Manage</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Leave  section end -->
+
+          <!-- calender section start -->
+          <div class="col-sm-12 col-lg-6 col-md-6">
+            <div class="card roundborder text-center">
+              <div class="card-body">
+                <img src="image/images.png" alt="">
+              </div>
+            </div><br>
+          </div>
+          <!-- calender section end -->
+        </div><br>
+
+
+        <div class="row">
+          <!-- Date and time section start -->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card roundborder text-center">
+              <div class="card-body">
+                <p><span id='date-time'></span></p>
+                <script>
+                  var dt = new Date();
+                  document.getElementById('date-time').innerHTML = dt;
+                </script>
+              </div>
+            </div>
+          </div>
+          <!-- Date and time section end -->
+        </div><br>
+
+
+        <!-- Apply for leave modal section start -->
+        <div class="modal fade" id="leaveapplay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content roundborder">
+              <div class="modal-body">
+                <form class="text-dark  text-center">
+                  <h3 class="">Leave Apply</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="date" style="margin-right: 200px;">Start</label>
+                      <input type="date" class="form-control" style="width: 190px; margin-right: 50px;">
+                    </div>
+                    <div class="form-group ">
+                      <label for="date" class="" style="margin-right: 200px;">End</label>
+                      <input type="date" class="form-control " style="width: 190px;">
+                    </div>
+                  </div>
+              </div>
+              <div class="form-group col-md-4 ">
+                <label for="inputState" style="margin-right: 200px;">Reason</label>
+                <select class="form-control  ">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class=" text-center">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="btn roundborder"
+                  style=" background-color: white; border: none;">cancle</button>
+                <button class=" btn roundborder" style=" border: none; background-color: plum;"> Apply</button>
+              </div>
+              <br>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Apply for leave modal section end -->
+      </div>
+
+      <!-- Parsonal info and notification section satrt -->
+      <div class="col-lg-3 card roundborder text-center " style="background-color: rgb(255, 241, 248);">
+
+        <div class="card-body">
+          <br>
+          <img src="image/download.jpg" class=" rounded-circle" style="height: 200px; width: 200px;"
+            alt="profile"><br><br>
+          <h5>David Parker</h5>
+          <p>Senior UI UX Designer</p>
+          <button class="btn" style="background-color: white; border-radius: 10px; border: solid 1px black;">View
+            Profile</button><br><br>
+          <h4>Notification</h4>
+          <div class="ex1 roundborder">
+            <ul class="list-group">
+              <li class="list-group-item ">leave aplay</li>
+              <li class="list-group-item ">edit profile</li>
+              <li class="list-group-item">notification</li>
+              <li class="list-group-item">work completed</li>
+              <li class="list-group-item">Profile updated</li>
+              <li class="list-group-item">notification 1</li>
+              <li class="list-group-item">notification 2</li>
+              <li class="list-group-item">notification 3</li>
+              <li class="list-group-item">notification 4</li>
+              <li class="list-group-item">notification 5</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- Parsonal info and notification section end -->
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Training & Certificate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="coursestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+<section class="container-fluid">
+<!----------------------- Side bar section starts here -------------------->
+            <div class="col-md-1 col-lg-1 col-sm-2 col-2 sidebar d-flex-col justify-content-between text-center">
+                <img src="logo-1.png" style="padding-top: 40px">
+                <div class="sidebar-icons text-left">
+                    <span><a href="#"><i class="fab fa-dashcube"></i></a></span>
+                    <span><a href="#"><i class="fas fa-user"></i></a></span>
+                    <span><a href="#"><i class="fas fa-user-check"></i></a></span>
+                    <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                    <span><a href="#"><i class="fas fa-calendar-alt"></i></a></span>
+                    <span><a href="#"><i class="fas fa-clipboard active"></i></a></span>
+                    <span class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i></a></span>
+                </div>
+            </div>
+<!-------------------  Side bar section ends here ------------------------>
+		<div class="row">
+			<div class="col-md-1 col-lg-1 col-sm-2 col-2 empty">
+		      <!-------- For Empty space under sidebar --------------->	
+			</div>
+            <div class="col-md-11 col-lg-11 col-sm-10 col-10">
+<!-------------------  User profile section starts here -------------------->
+            	<div class="container d-flex flex-row-reverse">
+            		<div class="row p-2 profile">
+            			<div class="col-4">
+            			   <img src="person.jpg" class="profile-image">
+            			</div>
+            			<div class="col-8">
+            			   <h6>David</h6>
+            			   <h7>Ui/Ux Designer</h7>	
+            			</div>
+            		</div>
+            	</div>
+<!------------------- Search bar section starts here ----------------------->
+                 <div class="container row">
+                 	<h2>Trainging & Certificate</h2>
+                 </div><br>
+                 <div class="container row">
+                 	<div class="col-7">
+                 		<form >
+                 			<div class="input-group search">
+                 				<input type="text" name="search" placeholder="search">
+                 			   <span><i class="fas fa-search"></i></span>
+                 			</div>
+                 		</form>
+                 	</div>
+<!----------------- Buttons beside search bar ------------------------------>
+                    <div class="col-5 text-center">
+                    	<a href="wishlist.html"><button class="btn btn-custome">Wishlist</button></a>
+                    	<a href="certification.html"><button class="btn btn-custome">My Certificates</button></a>
+                    	<a href=""><button class="btn btn-custome">Take a Training</button></a>
+                    </div>
+                 </div><br>
+<!----------------- Upcoming courses section starts here -------------------->
+                 <div class="container row">
+                 	<h3>Upcoming</h3>
+                 </div><br>
+               <!----- Course section ------->
+                 <div class="container-fluid courses">
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark"  onclick="fill(1)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark1" onclick="unfill(1)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-seats">30 Seats</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(1)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about1">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(2)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark2" onclick="unfill(2)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-seats">Seats full</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(2)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about2">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(3)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark3" onclick="unfill(3)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-seats">30 Seats</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(3)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about3">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div> 
+                    </div>
+
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(4)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark4" onclick="unfill(4)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-seats">3 Seats</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(4)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about4">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+                     
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(5)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark5" onclick="unfill(5)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-seats">30 Seats</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(5)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about5">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+            <!----------- Course toggler section starts here ----------------->
+                    <div class="container course-toggler d-flex justify-content-between">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+            <!------------- seats popup section starts here -------------------->
+                    <div class="popup-seats" id="popup-seats">
+                        <div class="container d-flex flex-row-reverse close-icon">
+                            <i class="fas fa-times" onclick="closepopupseats()"></i>
+                        </div>
+                        <div class="container inner-seats">
+                            <div class="row text-center">
+                                <div class="col-2">
+                                    <span class="seat-available">25</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">26</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">27</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">28</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">29</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">30</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">19</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">20</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">21</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">22</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">23</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">24</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">13</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">14</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">15</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">16</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">17</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-available">18</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">07</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">08</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">09</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">10</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">11</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">12</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">01</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">02</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">03</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">04</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">05</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="seat-reserved">06</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-between">
+                            <div>
+                                <span><i class="fas fa-square-full seat-avail"></i>&nbsp seat available</span>
+                            </div>
+                            <div>
+                                <span><i class="fas fa-square-full seat-reserv"></i>&nbsp seat reserved</span>
+                            </div>
+                            <div>
+                                <span><i class="fas fa-square-full seat-select"></i>&nbsp select seat</span>
+                            </div>
+                        </div>
+                        <div class="container text-center" style="padding-top: 20px">
+                            <button class="course-btn" onclick="openpopupseats()">Enroll</button>
+                        </div>
+                    </div>
+                 </div>
+                 <br>
+<!------------------- upcoming courses secftion ends here------------------------------>
+<!------------------- enrolled courses secftion ends here------------------------------>
+                 <div class="container row">
+                     <h3>Enrolled</h3>
+                 </div><br>
+                 <div class="container-fluid enrolled-courses">
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(6)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark6" onclick="unfill(6)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-days-left">13 days left</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-withdraw-btn" onclick="del()">Withdraw</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(6)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about6">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(7)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark7" onclick="unfill(7)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-days-left">13 days left</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-withdraw-btn" onclick="del()">Withdraw</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(7)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about7">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+
+                    <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(8)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark8" onclick="unfill(8)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-days-left">13 days left</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-withdraw-btn" onclick="del()">Withdraw</button>
+                            <i class="far fa-question-circle p-2" style="color: #E997E0" onclick="about(8)"></i>
+                            <!---------------- About sections starts here ---------------->
+                            <div class="about-course" id="about8">
+                                <h5>Introduction to Django<br>FrameWork</h5>
+                                <p class="course-author">by Pranav Anand</p>
+                                <p class="course-seats">30 Seats</p>
+                                <p class="course-duration"><i class="far fa-clock"></i>10:00 to 14:00 (4 hours)</p>
+                                <p class="course-time"><i class="far fa-calendar-minus"></i>1st Dec to 7th Jan (7 days)</p>
+                                <h6>In-House Certification</h6>
+                                <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                                <p style="font-size: 14px;"> ipsum dolor sit amet,consectetur<br> adipisicing elit, sed do<br> eiusmod
+                                tempor incidi<br>dunt ut labore
+                            </div>
+                            <i class="fas fa-share-alt p-2" style="color: #E997E0"></i>
+                        </div>  
+                    </div>
+<!---------------------- Delete pop up starts here ----------------------->
+                    <div class="popup-delete" id="delete">
+                        <div class="container d-flex flex-row-reverse close-icon">
+                            <i class="fas fa-times" onclick="cancel()"></i>
+                        </div>
+                        <div class="container text-center">
+                            <i class="far fa-trash-alt delete-icon"></i>
+                        </div>
+                        <div class="container text-center">
+                            <p>Are You Sure You Want To Withdraw This Slot?</p>
+                        </div>
+                        <div class="container" style="padding-top: 10px;">
+                            <div class="row text-center">
+                                <div class="col-6">
+                                    <button class="withdraw-btn">Withdraw</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="cancle-btn" onclick="cancel()">cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div><br>
+<!---------------- Attended corses section starts here -------------------->
+                 <div class="container row">
+                     <h3>Attended</h3>
+                 </div><br>
+                 <div class="container-fluid attended-courses">
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(9)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark9" onclick="unfill(9)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-complete">Completed</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="btn course-certificate-btn">Get certificate</button>
+                        </div>  
+                    </div>
+
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(10)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark10" onclick="unfill(10)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-incomplete">In-Complete</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="btn course-certificate-btn">Get certificate</button>
+                        </div>  
+                    </div>
+
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(11)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark11" onclick="unfill(11)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-incomplete">In-Complete</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="btn course-certificate-btn">Get certificate</button>
+                        </div>  
+                    </div>
+
+                     <div class="course">
+                        <img src="django.png" class="course-img">
+                        <i class="far fa-bookmark bookmark" onclick="fill(12)"></i>
+                        <i class="fas fa-bookmark bookmark bookmark-filled" id="bookmark12" onclick="unfill(12)"></i>
+                        <h5 style="padding-top: 10px">Introduction to Django</h5>
+                        <div class="d-flex justify-content-between">
+                           <p class="course-author">by Pranav Anand</p>
+                           <!----- Author section in course ---------->
+                            <div class="author text-center">
+                                 <img src="person.jpg" class="course-user-image">
+                                 <h5>Pranav Anand</h5>
+                                 <h6>Strategiv Advisor</h6>
+                                 <h6>DevOps Department</h6>
+                                 <h6>Abcd@gmail.com</h6>
+                                 <h6>Reporting to Arham Fahmi</h6>
+                            </div> 
+                           <p class="course-complete">Completed</p> 
+                        </div>
+                        <div class="d-flex justify-content-between">
+                           <i class="far fa-calendar-minus"></i><p class="course-time">1st Dec to 7th Jan</p>
+                           <i class="far fa-clock"></i><p class="course-duration">10:00 to 14:00</p> 
+                        </div>  
+                        <h6>In-House Certification</h6>
+                        <p class="text-success" style="font-size: 10px;">(Includes Certificate)</p>
+                        <div class="container">
+                            <button class="course-certificate-btn">Get certificate</button>
+                        </div>  
+                    </div>
+                 </div>
+            </div>
+		</div>
+</section>
+<!---------- Java script section starts here ---------------------->
+<script type="text/javascript">
+  function fill(num){
+    let id="bookmark"+num;
+    let Fill=document.getElementById(id);
+    Fill.style.display="block"; 
+  }
+  function unfill(num){
+    let id="bookmark"+num;
+    let Fill=document.getElementById(id);
+    Fill.style.display="none"; 
+  }
+  function del(){
+    let Del=document.getElementById('delete');
+    Del.style.display="block";
+  }
+  function cancel(){
+    let Cancel=document.getElementById('delete');
+    Cancel.style.display="none";
+  }
+  function about(num){
+    let id="about"+num;
+    let Fill=document.getElementById(id);
+    Fill.style.display="block"; 
+  }
+  function closepopupseats(){
+    let Close=document.getElementById("popup-seats");
+    Close.style.display="none";
+  }
+  function openpopupseats(){
+    let Open=document.getElementById("popup-seats");
+    Open.style.display="block";
+  }
+  $(document).ready(function(){
+     $(".seat-available").click(function(){
+            $(this).css("background-color","rgba(187, 107, 217, 0.75)"); 
+        
+     });
+  });
+</script>
+</body>
+</html>

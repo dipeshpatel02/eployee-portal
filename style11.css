@@ -1,0 +1,53 @@
+#sidebar-logo .img-fluid{
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sidebar{
+    box-shadow: 0.5px 0px 10px rgb(161, 112, 147);
+    border-radius: 17px;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    margin-top: 2rem;
+    margin-left: 0.7rem;
+    margin-bottom: 4rem;
+}
+.logo1{
+    margin-left: -10px;
+}
+.logo2{
+    margin-left: -10px;
+    margin-top: -30px;
+}
+.logo3{
+    margin-top: 50px;
+    margin-left: -10px;
+}
+#Table-head{
+    margin: 30px;
+    margin-top: 50px;
+}
+.list{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.head{
+    font-weight: bold;
+    font-size: large;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.purple{
+    background-color: rgb(209, 190, 204);
+}

@@ -1,0 +1,101 @@
+
+#sidebar-logo .img-fluid{
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sidebar{
+    box-shadow: 0.5px 0px 10px rgb(161, 112, 147);
+    border-radius: 17px;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    margin-top: 2rem;
+    margin-left: 0.7rem;
+    margin-bottom: 4rem;
+}
+.logo1{
+    margin-left: -10px;
+}
+.logo2{
+    margin-left: -10px;
+    margin-top: -30px;
+}
+.logo3{
+    margin-top: 250px;
+    margin-left: -10px;
+}
+.page-5{
+    margin-top: 45px;
+    margin-left: 35px;
+}
+#refer-heading5{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 40px;
+}
+.col-5 label{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.col-11 label{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.col-5 input{
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.page-5 ::placeholder{
+    font-size: large;
+    color: black;
+}
+.select select{
+    border: 2px solid black;
+    width: 370px;
+    height: 38px;
+    border-radius:5px;
+}
+.col-11{
+    margin-bottom: 20px;
+}
+.resume input{
+    border: 2px solid black;
+}
+.comment input{
+    border: 2px solid black;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.col-4{
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+.col-4 button{
+    background-color: rgb(205, 43, 226);
+    padding-left: 77px;
+    padding-right: 77px;
+    color: black;
+    font-size: 22px;
+    border-radius: 20px;
+}
+.col-4 button:hover{
+    background-color: rgb(148, 124, 147);
+    text-decoration: none;
+    color: black;
+}
+.col-8{
+    margin-top: 23px;
+}
+.box{
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px grey;
+}
+.col-8 p{
+    margin-top: -10px;
+    margin-left: 15px;
+}

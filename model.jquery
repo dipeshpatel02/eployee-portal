@@ -1,0 +1,7 @@
+$('#go').click(function() {
+    var test1 = $('#test').val();
+  
+    if (test1 === "") {
+      $('#\\#myModal').modal('show');
+    }
+  });

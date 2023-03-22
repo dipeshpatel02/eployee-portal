@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Login Design</title>
+
+</head>
+
+<body >
+
+    <script src="js.js"></script>
+
+
+    <div class="container">
+        <div class="left">
+            <img src="image/Login Design.png">
+        </div>
+        <div class="right">
+            <div class="logo">
+                <!-- <img src="image/logo-1.png"> -->
+            </div>
+            <div class="input-box">
+                <h1>Hello Again!</h1>
+                <h3> Welcome Back</h3>
+
+                <input type="text" id="email" name="fname" placeholder="Username"><br>
+                <input type="password" id="pwd1" name="fm" placeholder="Password" required="Password?"><br>
+                <input type="submit" onclick="validateForm()">
+
+                <div class="forget"> <a href="#">Forget Password?</a> </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="form-popup" id="myForm">
+        <div class="dark">
+        <div class="coll-4 ">
+            <h1 class="tit-l">Success!</h1>
+            <img class="tickimg" src="image/tick.png" class="image" alt="">
+            <h3 class="info">Everything worked.</h3>
+            <a href="index2&3.html"><button id="b1"
+                    data-dismiss="modal" onclick="closeForm()" class="btnl">Finsh</button></a>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="form-popup" style="float: unset;" id="emyForm">
+        <div class="dark">
+        <div class="coll-4">
+            <h1 class="etit-l">Erorr</h1>
+            <img class="tickimg" src="image/cross.png" class="image" alt="">
+            <h3 class="einfo">Something Wrong</h3>
+            <button id="b1" data-dismiss="modal" onclick="closeForm()" style="background-color: brown;"
+                class="btnl">Finsh</button>
+        </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

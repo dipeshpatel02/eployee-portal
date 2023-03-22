@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("image/backimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+  width: 700px;
+  height: 600px;
+  background-color:white;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 8px black;
+}
+input{
+  height: 2 rem;
+}
+label{
+  font-size: 20 px;
+}
+ input[type=text],input[type=number],.opt{
+   border: 2px solid black;
+ } 
+.close{
+  border: 2px solid black;
+  font-size: 15px;
+  text-align: center;
+  height:2 rem ;
+  width: 120px;
+
+}
+.update{
+  height: 2 rem;
+  width: 120px;
+  color: black;
+  background-color: rgb(192, 166, 214);
+}
+

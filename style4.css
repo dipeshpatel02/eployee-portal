@@ -1,0 +1,72 @@
+#sidebar-logo .img-fluid{
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sidebar{
+    box-shadow: 0.5px 0px 10px rgb(161, 112, 147);
+    border-radius: 17px;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    margin-top: 2rem;
+    margin-left: 0.7rem;
+    margin-bottom: 4rem;
+}
+.logo1{
+    margin-left: -10px;
+}
+.logo2{
+    margin-left: -10px;
+    margin-top: -30px;
+}
+.logo3{
+    margin-top: 50px;
+    margin-left: -10px;
+}
+  #about-me {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  #about-me td{
+    font-size: 25px;
+  }
+  .add{
+    margin-left: 100px;
+  }
+  .about-me-heading{
+    color: black;
+    padding-bottom: 25px;  
+    padding-left: 30px; 
+  }
+  .about-me-content{
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-left: 50px;
+  }
+  #David{
+    box-shadow: 0 0 10px grey;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: large;
+    text-align: center;
+  } 
+  #David button{
+    margin:10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    cursor: pointer;
+  }
+  #David-img{
+    width: 380px;
+    padding-right: 20px;
+    height: 380px;
+  }
